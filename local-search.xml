@@ -4,11 +4,11 @@
   
   
   <entry>
-    <title>个人简历</title>
-    <link href="/2025/03/10/%E4%B8%AA%E4%BA%BA%E7%AE%80%E5%8E%86/"/>
-    <url>/2025/03/10/%E4%B8%AA%E4%BA%BA%E7%AE%80%E5%8E%86/</url>
+    <title>学习内容</title>
+    <link href="/2025/03/10/%E5%AD%A6%E4%B9%A0%E5%86%85%E5%AE%B9/"/>
+    <url>/2025/03/10/%E5%AD%A6%E4%B9%A0%E5%86%85%E5%AE%B9/</url>
     
-    <content type="html"><![CDATA[<h1 id="个人信息"><a href="#个人信息" class="headerlink" title="个人信息"></a>个人信息</h1><ul><li>姓名：刘俊龙</li><li>出生年月：2005.05</li><li>籍贯：湖南新化</li><li>学历：本科在读</li><li>民族：汉</li></ul><h1 id="联系方式"><a href="#联系方式" class="headerlink" title="联系方式"></a>联系方式</h1><ul><li>qq：2257332987</li><li>电话：18973885943</li><li>微信：lon566456</li><li>地址：湖南省长沙市天心区韶山南路498号中南林业科技大学</li></ul><h1 id="兴趣爱好"><a href="#兴趣爱好" class="headerlink" title="兴趣爱好"></a>兴趣爱好</h1><ul><li>听音乐</li><li>看电影</li><li>运动</li><li>阅读</li><li>摄影</li></ul><h1 id="特长技能"><a href="#特长技能" class="headerlink" title="特长技能"></a>特长技能</h1><ul><li><p>C&#x2F;C++，Java，Matlab</p></li><li><p>大学英语四级</p></li></ul>]]></content>
+    <content type="html"><![CDATA[<h1 id="编程与开发"><a href="#编程与开发" class="headerlink" title="编程与开发"></a>编程与开发</h1><ol><li><strong>核心技能</strong>：Python 基础语法、JavaScript 网页交互</li><li><strong>工具实战</strong>：Git 版本控制、VS Code 高效编码</li><li><strong>项目实践</strong>：搭建个人博客、开发简单 TodoList 应用</li></ol><h1 id="数据分析与可视化"><a href="#数据分析与可视化" class="headerlink" title="数据分析与可视化"></a>数据分析与可视化</h1><ol><li><strong>数据处理</strong>：Excel 进阶函数、SQL 数据库查询</li><li><strong>案例学习</strong>：用 Python 分析电商用户行为数据</li></ol><h1 id="设计思维与工具"><a href="#设计思维与工具" class="headerlink" title="设计思维与工具"></a>设计思维与工具</h1><ol><li><strong>平面设计</strong>：Canva&#x2F;Photoshop 制作海报、信息图</li><li><strong>动效入门</strong>：After Effects 基础动画制作</li></ol>]]></content>
     
     
     <categories>
@@ -29,29 +29,66 @@
   
   
   <entry>
-    <title>Hello World</title>
-    <link href="/2025/03/08/hello-world/"/>
-    <url>/2025/03/08/hello-world/</url>
+    <title>我的生活</title>
+    <link href="/2025/03/10/%E6%88%91%E7%9A%84%E7%94%9F%E6%B4%BB/"/>
+    <url>/2025/03/10/%E6%88%91%E7%9A%84%E7%94%9F%E6%B4%BB/</url>
     
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    <content type="html"><![CDATA[<h1 id="照片墙"><a href="#照片墙" class="headerlink" title="照片墙"></a>照片墙</h1><p><img src="/img/bg/index.png"></p><h2 id="图片1"><a href="#图片1" class="headerlink" title="图片1"></a>图片1</h2><p><img src="/img/GRJL.png"></p><h2 id="图片2"><a href="#图片2" class="headerlink" title="图片2"></a>图片2</h2><p><img src="/img/WDLX.png"></p><h2 id="图片3"><a href="#图片3" class="headerlink" title="图片3"></a>图片3</h2><p><img src="/img/WDSH.png"></p><h2 id="图片4"><a href="#图片4" class="headerlink" title="图片4"></a>图片4</h2><p><img src="/img/XXNR.png"></p><h2 id="图片5"><a href="#图片5" class="headerlink" title="图片5"></a>图片5</h2>]]></content>
     
     
+    <categories>
+      
+      <category>个人</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>原创</tag>
+      
+    </tags>
     
   </entry>
   
   
   
   <entry>
-    <title>测试文章</title>
-    <link href="/2021/06/10/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/"/>
-    <url>/2021/06/10/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/</url>
+    <title>我的理想</title>
+    <link href="/2025/03/10/%E6%88%91%E7%9A%84%E7%90%86%E6%83%B3/"/>
+    <url>/2025/03/10/%E6%88%91%E7%9A%84%E7%90%86%E6%83%B3/</url>
     
-    <content type="html"><![CDATA[<p>这是一篇测试文章</p><img src="/2021/06/10/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/test.png" class="" title="图片引用方法一"><img src="/2021/06/10/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/test.png" class="" title="图片引用方法一"><p><img src="/images/test.png" alt="图片引用方法三"></p>]]></content>
+    <content type="html"><![CDATA[<ul><li><h1 id="学业精进："><a href="#学业精进：" class="headerlink" title="学业精进："></a><strong>学业精进</strong>：</h1><ul><li>保持高绩点，争取奖学金</li><li>发表学术论文或参与科研项目</li><li>跨专业学习课程，拓宽知识面</li></ul></li><li><h1 id="技能提升："><a href="#技能提升：" class="headerlink" title="技能提升："></a><strong>技能提升</strong>：</h1><ul><li>掌握编程&#x2F;数据分析&#x2F;设计等实用技能</li><li>考取专业证书（如四六级、雅思、CPA等）</li><li>提升演讲、写作、团队协作等软实力</li></ul></li><li><h1 id="职业探索："><a href="#职业探索：" class="headerlink" title="职业探索："></a><strong>职业探索</strong>：</h1><ul><li>通过实习明确职业方向</li><li>积累大厂或行业头部公司的工作经验</li><li>尝试创业或参与大学生创新创业大赛</li></ul></li><li><h1 id="经济独立："><a href="#经济独立：" class="headerlink" title="经济独立："></a><strong>经济独立</strong>：</h1><ul><li>通过兼职&#x2F;副业赚取生活费</li><li>学习理财知识，培养储蓄习惯</li><li>减少对家庭的经济依赖</li></ul></li><li><h1 id="社交与人脉："><a href="#社交与人脉：" class="headerlink" title="社交与人脉："></a><strong>社交与人脉</strong>：</h1><ul><li>结交志同道合的挚友或合作伙伴</li><li>加入优质社团&#x2F;学生组织锻炼领导力</li><li>主动链接行业前辈或校友资源</li></ul></li><li><h1 id="身心健康："><a href="#身心健康：" class="headerlink" title="身心健康："></a><strong>身心健康</strong>：</h1><ul><li>坚持规律运动，保持健康体态</li><li>学会管理压力，避免长期焦虑&#x2F;内耗</li><li>培养早起、时间规划等自律习惯</li></ul></li><li><h1 id="兴趣与热爱："><a href="#兴趣与热爱：" class="headerlink" title="兴趣与热爱："></a><strong>兴趣与热爱</strong>：</h1><ul><li>发展一门特长（如摄影、乐器、舞蹈）</li><li>穷游中国或背包旅行，开阔视野</li><li>坚持阅读&#x2F;观影，形成独立思考能力</li></ul></li><li><h1 id="社会价值："><a href="#社会价值：" class="headerlink" title="社会价值："></a><strong>社会价值</strong>：</h1><ul><li>参与支教、社区志愿服务</li><li>为环保&#x2F;乡村振兴等议题发声或行动</li><li>用专业能力解决实际问题（如开发助残App）</li></ul></li><li><h1 id="未来准备："><a href="#未来准备：" class="headerlink" title="未来准备："></a><strong>未来准备</strong>：</h1><ul><li>备战考研&#x2F;留学，提升学历竞争力</li><li>提前规划职业路径，避免“毕业迷茫”</li><li>培养终身学习习惯，适应快速变化的社会</li></ul></li></ul>]]></content>
     
     
     <categories>
       
-      <category>Java</category>
+      <category>个人</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>原创</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>个人简历</title>
+    <link href="/2025/03/10/%E4%B8%AA%E4%BA%BA%E7%AE%80%E5%8E%86/"/>
+    <url>/2025/03/10/%E4%B8%AA%E4%BA%BA%E7%AE%80%E5%8E%86/</url>
+    
+    <content type="html"><![CDATA[<h1 id="个人信息"><a href="#个人信息" class="headerlink" title="个人信息"></a>个人信息</h1><ul><li>姓名：刘俊龙</li><li>出生年月：2005.05</li><li>籍贯：湖南新化</li><li>学历：本科在读</li><li>民族：汉</li></ul><h1 id="联系方式"><a href="#联系方式" class="headerlink" title="联系方式"></a>联系方式</h1><ul><li>qq：2257332987</li><li>电话：18973885943</li><li>微信：lon566456</li><li>地址：湖南省长沙市天心区韶山南路498号中南林业科技大学</li></ul><h1 id="兴趣爱好"><a href="#兴趣爱好" class="headerlink" title="兴趣爱好"></a>兴趣爱好</h1><ul><li>听音乐</li><li>看电影</li><li>运动</li><li>阅读</li><li>摄影</li></ul><h1 id="特长技能"><a href="#特长技能" class="headerlink" title="特长技能"></a>特长技能</h1><ul><li><p>C&#x2F;C++，Java，Matlab</p></li><li><p>大学英语四级</p></li></ul>]]></content>
+    
+    
+    <categories>
+      
+      <category>个人</category>
       
     </categories>
     
