@@ -1,0 +1,1 @@
+console.log('保存的用户数据:', localStorage.getItem('user'));
