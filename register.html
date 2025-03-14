@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>register</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background: url(img/Desert.jpg) no-repeat center/cover;
+            font-family: Arial, sans-serif;
+        }
+
+        #loginDiv {
+            width: 500px;
+            background: rgba(75, 81, 95, 0.3);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.2);
+        }
+
+        .input-group {
+            position: relative;
+            margin: 25px 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .input-group label {
+            width: 100px;
+            color: #fff;
+            margin-right: 15px;
+            font-size: 16px;
+        }
+
+        .input-group {
+            max-width: 500px;
+            margin: 20px auto;
+            display: flex;
+            align-items: center;
+        }
+
+        .input-group label {
+            flex: 0 0 100px;
+            color: #fff;
+            font-size: 15px;
+        }
+
+        .input-group input,
+        .input-group select,
+        .input-group textarea {
+            flex: 1;
+            padding: 14px 18px;
+            border: 2px solid rgba(255,255,255,0.3);
+            border-radius: 10px;
+            background: rgba(255,255,255,0.1);
+            color: #fff;
+            font-size: 15px;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            width: 100%;
+            max-width: 400px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            margin: 8px 0;
+        }
+
+        @media (max-width: 480px) {
+            .input-group input,
+            .input-group select,
+            .input-group textarea {
+                max-width: 92%;
+                padding: 12px 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .input-group {
+                flex-wrap: wrap;
+                max-width: 280px;
+            }
+            
+            .input-group label {
+                flex: 0 0 100%;
+                margin-bottom: 10px;
+                font-size: 14px;
+            }
+            
+            .input-group input,
+            .input-group select,
+            .input-group textarea {
+                max-width: 100%;
+                padding: 12px 16px;
+                border-radius: 8px;
+            }
+        }
+
+        .input-group input:focus,
+        .input-group select:focus,
+        .input-group textarea:focus {
+            border-color: #4CAF50;
+            outline: none;
+        }
+
+        .required-field::after {
+            content: '*';
+            color: #ff4444;
+            margin-left: 5px;
+            font-size: 18px;
+        }
+
+        .validation-feedback {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 14px;
+            opacity: 1;
+            transition: all 0.3s ease;
+            pointer-events: none;
+            z-index: 1;
+            color: #ff4444;
+            display: none;
+        }
+
+        .validation-feedback.error {
+            display: inline;
+            color: #ff4444;
+        }
+
+        .validation-feedback.success {
+            display: inline;
+            color: #00C851;
+        }
+
+        .validation-feedback.error::before {
+            border-color: transparent #ff4444 transparent transparent;
+        }
+
+        .validation-feedback.success::before {
+            border-color: transparent #00C851 transparent transparent;
+        }
+
+        .button-group {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .button {
+            padding: 12px 30px;
+            border: none;
+            border-radius: 6px;
+            background-color: rgba(100, 149, 237, .7);
+            color: white;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            margin: 0 10px;
+        }
+
+        .button:hover {
+            background: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div id="loginDiv">
+        <form id="registerForm" onsubmit="return submitT()">
+            <h1 style="color: white; text-align: center; margin-bottom: 30px;">用户注册</h1>
+            
+            <div class="input-group">
+                <label for="userName" class="required-field">用户名</label>
+                <input id="userName" type="text" required>
+                <div class="validation-feedback" id="name_feedback"></div>
+            </div>
+
+            <div class="input-group">
+                <label for="password" class="required-field">密码</label>
+                <input id="password" type="password" required>
+                <div class="validation-feedback" id="password_feedback"></div>
+            </div>
+
+            <div class="input-group">
+                <label for="surePassword" class="required-field">确认密码</label>
+                <input id="surePassword" type="password" required>
+                <div class="validation-feedback" id="surePassword_feedback"></div>
+            </div>
+
+            <div class="input-group">
+                <label>年级专业班级</label>
+                <div style="display: flex; gap: 10px;">
+                    <select class="grade-select" style="color: #000;">
+                        <option value="">年级</option>
+                        <option>24级</option>
+                        <option>23级</option>
+                        <option>22级</option>
+                        <option>21级</option>
+                    </select>
+                    <select class="major-select" style="color: #000;">
+                        <option value="">专业</option>
+                        <option>计算机科学与技术</option>
+                        <option>软件工程</option>
+                        <option>信息与计算科学</option>
+                    </select>
+                    <select class="class-select" style="color: #000;">
+                        <option value="">班级</option>
+                        <option>一班</option>
+                        <option>二班</option>
+                        <option>三班</option>
+                        <option>四班</option>
+                        <option>五班</option>
+                        <option>六班</option>
+                    </select>
+                </div>
+                <div class="validation-feedback" id="class_feedback"></div>
+            </div>
+
+            <div class="input-group">
+                <label class="required-field">性别</label>
+                 <div style="display: flex; flex-wrap: wrap; gap: 20px;">
+                    <input type="radio" name="sex" id="male" value="male" required/>男
+                    <input type="radio" name="sex" id="female" value="female" />女
+                </div>
+                <div class="validation-feedback" id="sex_feedback"></div>
+            </div>
+
+            <div class="input-group">
+                <label for="email" class="required-field">邮箱</label>
+                <input id="email" type="email" required>
+                <div class="validation-feedback" id="email_feedback"></div>
+            </div>
+
+            <div class="input-group">
+                <label for="birthday">生日</label>
+                <input id="birthday" type="date" style="color: #000;">
+                <div class="validation-feedback" id="birthday_feedback"></div>
+            </div>
+
+            <div class="input-group">
+                <label>兴趣</label>
+                <div style="display: flex; flex-wrap: wrap; gap: 20px;">
+                    <label style="display: flex; align-items: center;">
+                        <input type="checkbox" name="hobby" value="reading" style="margin-right: 5px;">
+                        <span style="color: #000;">阅读</span>
+                    </label>
+                    <label style="display: flex; align-items: center;">
+                        <input type="checkbox" name="hobby" value="sports" style="margin-right: 5px;">
+                        <span style="color: #000;">运动</span>
+                    </label>
+                    <label style="display: flex; align-items: center;">
+                        <input type="checkbox" name="hobby" value="music" style="margin-right: 5px;">
+                        <span style="color: #000;">音乐</span>
+                    </label>
+                    <label style="display: flex; align-items: center;">
+                        <input type="checkbox" name="hobby" value="other" style="margin-right: 5px;">
+                        <span style="color: #000;">其他</span>
+                    </label>
+                </div>
+                <div class="validation-feedback" id="hobby_feedback"></div>
+            </div>
+
+            <div class="input-group">
+                <label class="required-field">验证码</label>
+                <div style="display: flex; gap: 10px; align-items: center;">
+                    <input id="captcha" type="text" placeholder="输入验证码" style="flex: 0 0 120px;" required>
+                    <canvas id="captchaCanvas" width="100" height="40" style="border: 1px solid #ddd; border-radius: 4px; cursor: pointer;"></canvas>
+                </div>
+                <div class="validation-feedback" id="captcha_feedback"></div>
+            </div>
+
+            <div class="button-group">
+                <button type="button" class="button" onclick="window.location.href='login.html'">前往登录</button>
+                <button type="submit" class="button">立即注册</button>
+            </div>
+        </form>
+    </div>
+
+<script>
+// 通用验证反馈函数
+function showFeedback(elementId, message, isError) {
+    const feedback = document.getElementById(elementId);
+    if (message) {
+        feedback.textContent = message;
+        feedback.className = `validation-feedback ${isError ? 'error' : 'success'}`;
+    } else {
+        feedback.textContent = '';
+        feedback.className = 'validation-feedback';
+    }
+}
+
+// 带防抖的实时验证 + 即时失焦验证
+function setupValidation(element, validationFn) {
+    let timeout;
+    
+    element.addEventListener('input', () => {
+        clearTimeout(timeout);
+        timeout = setTimeout(() => validationFn(true), 500);
+    });
+    
+    element.addEventListener('blur', () => {
+        clearTimeout(timeout);
+        validationFn(false);
+    });
+    
+    element.addEventListener('focus', () => {
+        validationFn(true);
+    });
+}
+
+// 生成随机验证码
+function generateCaptcha() {
+    const chars = 'ABCDEFGHJKMNPQRSTUVWXYZabcdefghjkmnopqrstuvwxyz23456789';
+    let captcha = '';
+    for(let i = 0; i < 4; i++) {
+        captcha += chars.charAt(Math.floor(Math.random() * chars.length));
+    }
+    return captcha;
+}
+
+// 绘制验证码到Canvas
+function drawCaptcha(captcha) {
+    const canvas = document.getElementById('captchaCanvas');
+    const ctx = canvas.getContext('2d');
+    
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.fillStyle = '#f8f9fa';
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    
+    ctx.font = '24px Arial';
+    ctx.fillStyle = '#333';
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    
+    for(let i = 0; i < 3; i++) {
+        ctx.beginPath();
+        ctx.moveTo(Math.random() * canvas.width, Math.random() * canvas.height);
+        ctx.lineTo(Math.random() * canvas.width, Math.random() * canvas.height);
+        ctx.strokeStyle = '#ddd';
+        ctx.stroke();
+    }
+    
+    ctx.setTransform(1, 0.1, -0.1, 1, 0, 0);
+    ctx.fillText(captcha, canvas.width/2, canvas.height/2);
+}
+
+// 初始化验证码
+let currentCaptcha = generateCaptcha();
+drawCaptcha(currentCaptcha);
+
+document.getElementById('captchaCanvas').addEventListener('click', function() {
+    currentCaptcha = generateCaptcha();
+    drawCaptcha(currentCaptcha);
+});
+
+// 验证码验证
+function validateCaptcha(isInput) {
+    const input = document.getElementById('captcha').value.trim();
+    if (!isInput && input === '') {
+        showFeedback('captcha_feedback', '验证码不能为空', true);
+        return false;
+    }
+    if (input.toLowerCase() !== currentCaptcha.toLowerCase()) {
+        showFeedback('captcha_feedback', '验证码不正确', true);
+        return false;
+    }
+    showFeedback('captcha_feedback', '✓ 验证码正确', false);
+    return true;
+}
+
+// 用户名验证
+function validateUsername(isInput) {
+    const username = userName.value.trim();
+    if (!isInput && username === '') {
+        showFeedback('name_feedback', '用户名不能为空', true);
+        return false;
+    }
+    if (username.length < 1 || username.length > 8) {
+        showFeedback('name_feedback', '用户名需1-8个字符', true);
+        return false;
+    }
+    showFeedback('name_feedback', '✓ 用户名可用', false);
+    return true;
+}
+
+// 密码验证
+function validatePassword(isInput) {
+    const password = passwordInput.value;
+    if (!isInput && password === '') {
+        showFeedback('password_feedback', '密码不能为空', true);
+        return false;
+    }
+    if (password.length < 6) {
+        showFeedback('password_feedback', '密码至少6位', true);
+        return false;
+    }
+    showFeedback('password_feedback', '✓ 密码有效', false);
+    return true;
+}
+
+// 添加确认密码验证
+function validateConfirmPassword(isInput) {
+    const password = passwordInput.value;
+    const confirmPassword = surePassword.value;
+    
+    if (!isInput && confirmPassword === '') {
+        showFeedback('surePassword_feedback', '确认密码不能为空', true);
+        return false;
+    }
+    
+    if (password !== confirmPassword) {
+        showFeedback('surePassword_feedback', '两次密码不一致', true);
+        return false;
+    }
+    
+    showFeedback('surePassword_feedback', '✓ 密码一致', false);
+    return true;
+}
+
+// 添加性别验证
+function validateSex(isInput) {
+    const sexSelected = document.querySelector('input[name="sex"]:checked');
+    
+    if (!isInput && !sexSelected) {
+        showFeedback('sex_feedback', '请选择性别', true);
+        return false;
+    }
+    
+    if (sexSelected) {
+        showFeedback('sex_feedback', '✓ 已选择', false);
+        return true;
+    }
+    
+    return false;
+}
+
+// 添加邮箱验证
+function validateEmail(isInput) {
+    const email = emailInput.value.trim();
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    
+    if (!isInput && email === '') {
+        showFeedback('email_feedback', '邮箱不能为空', true);
+        return false;
+    }
+    
+    if (!emailRegex.test(email)) {
+        showFeedback('email_feedback', '邮箱格式不正确', true);
+        return false;
+    }
+    
+    showFeedback('email_feedback', '✓ 邮箱有效', false);
+    return true;
+}
+
+// 添加生日验证
+function validateBirthday(isInput) {
+    const birthday = document.getElementById('birthday').value;
+    
+    // 生日是非必填项，如果为空则不显示错误
+    if (birthday === '') {
+        showFeedback('birthday_feedback', '', false);
+        return true;
+    }
+    
+    const birthDate = new Date(birthday);
+    const today = new Date();
+    
+    if (birthDate > today) {
+        showFeedback('birthday_feedback', '生日不能是未来日期', true);
+        return false;
+    }
+    
+    showFeedback('birthday_feedback', '✓ 生日有效', false);
+    return true;
+}
+
+// 添加年级专业班级验证
+function validateClass(isInput) {
+    const grade = document.querySelector('.grade-select').value;
+    const major = document.querySelector('.major-select').value;
+    const classNum = document.querySelector('.class-select').value;
+    
+    // 年级专业班级是非必填项，不显示错误提示
+    if (grade === '' && major === '' && classNum === '') {
+        showFeedback('class_feedback', '', false);
+        return true;
+    }
+    
+    // 如果用户填写了部分信息，则要求完整填写
+    if (grade === '' || major === '' || classNum === '') {
+        showFeedback('class_feedback', '请完整选择年级专业班级', true);
+        return false;
+    }
+    
+    showFeedback('class_feedback', '✓ 选择有效', false);
+    return true;
+}
+
+// 添加兴趣验证
+function validateHobby(isInput) {
+    // 兴趣是非必填项，不显示错误提示
+    showFeedback('hobby_feedback', '', false);
+    return true;
+}
+
+// 更新表单验证
+function validateForm() {
+    return validateUsername(false) && 
+           validatePassword(false) && 
+           validateConfirmPassword(false) &&
+           validateEmail(false) &&
+           validateSex(false) &&
+           validateCaptcha(false);
+}
+
+// 添加表单提交函数
+function submitT() {
+    if (!validateForm()) {
+        return false;
+    }
+    
+    // 收集表单数据
+    const formData = {
+        username: userName.value.trim(),
+        password: passwordInput.value,
+        grade: document.querySelector('.grade-select').value,
+        major: document.querySelector('.major-select').value,
+        class: document.querySelector('.class-select').value,
+        sex: document.querySelector('input[name="sex"]:checked').value,
+        email: emailInput.value.trim(),
+        birthday: document.getElementById('birthday').value,
+        hobbies: Array.from(document.querySelectorAll('input[name="hobby"]:checked')).map(el => el.value)
+    };
+    
+    // 保存用户信息到 localStorage
+    localStorage.setItem('user', JSON.stringify(formData));
+    
+    // 注册成功提示并跳转
+    alert('注册成功！即将跳转到登录页面');
+    window.location.href = 'login.html';
+    
+    return false;
+}
+
+// 初始化验证
+const userName = document.getElementById('userName');
+const passwordInput = document.getElementById('password');
+const surePassword = document.getElementById('surePassword');
+const emailInput = document.getElementById('email');
+const birthdayInput = document.getElementById('birthday');
+
+setupValidation(userName, validateUsername);
+setupValidation(passwordInput, validatePassword);
+setupValidation(surePassword, validateConfirmPassword);
+setupValidation(emailInput, validateEmail);
+setupValidation(birthdayInput, validateBirthday);
+setupValidation(document.getElementById('captcha'), validateCaptcha);
+
+// 添加年级专业班级选择事件监听
+document.querySelectorAll('.grade-select, .major-select, .class-select').forEach(select => {
+    select.addEventListener('change', () => validateClass(false));
+});
+
+// 添加性别选择事件监听
+document.querySelectorAll('input[name="sex"]').forEach(radio => {
+    radio.addEventListener('change', () => validateSex(false));
+});
+
+// 添加兴趣选择事件监听
+document.querySelectorAll('input[name="hobby"]').forEach(checkbox => {
+    checkbox.addEventListener('change', () => validateHobby(false));
+});
+
+document.getElementById('registerForm').addEventListener('submit', function(e) {
+    if (!validateForm()) {
+        e.preventDefault();
+        currentCaptcha = generateCaptcha();
+        drawCaptcha(currentCaptcha);
+    }
+});
+</script>
+</body>
+</html>
