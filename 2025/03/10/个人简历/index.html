@@ -98,7 +98,7 @@
     
     /* 左侧姓名区域 */
     .resume-name-section {
-      flex: 1.5;
+      flex: 1;
       text-align: center;
     }
     
@@ -124,8 +124,8 @@
       border-collapse: collapse;
       border-spacing: 0;
       border: none !important;
-      table-layout: auto; /* 添加这行使表格可以根据内容自动调整 */
-      max-width: 100%; /* 确保表格不会超出父容器 */
+      table-layout: auto; 
+      max-width: 100%; 
     }
     
     .info-table tr {
@@ -142,7 +142,9 @@
     /* 添加媒体查询以在小屏幕上调整样式 */
     @media (max-width: 768px) {
       .resume-header {
-        flex-direction: column; /* 在小屏幕上改为垂直排列 */
+        flex-direction: row; /* 改为水平排列 */
+        flex-wrap: wrap; /* 允许元素在需要时换行 */
+        justify-content: space-between; /* 水平均匀分布 */
       }
       
       .info-table td {
@@ -159,7 +161,7 @@
 
     /* 右侧照片区域 */
     .photo-section {
-      flex: 0.5;
+      flex: 1;
       text-align: right;
     }
 
@@ -445,9 +447,8 @@
                  
                       </tr>
                       <tr>
-                        <td class="info">&nbsp;GitHub &nbsp;：
+                        <td class="info">GitHub：
                           <a href="https://github.com/neallive" target="_blank">https://github.com/neallive</a></td>
-                      
                       </tr>
                     </table>
                   </div>
