@@ -88,7 +88,7 @@
 
   
   <style>
-    /* 修改头部布局为三列 */
+    /*头部布局为三列 */
     .resume-header {
       display: flex;
       justify-content: space-between;
@@ -98,15 +98,15 @@
     
     /* 左侧姓名区域 */
     .resume-name-section {
-      flex: 0.7;
+      flex: 0.8;
       text-align: center;
-      padding-right: 15px;
+      padding-right: 20px;
     }
     
     .artistic-name {
       font-family: "楷体";
-      font-size: 36px; 
-      letter-spacing: 2px;
+      font-size: 38px; 
+      letter-spacing: 3px;
       margin: 0;
       padding: 0;
       display: inline-block;
@@ -114,15 +114,16 @@
     
     /* 中间个人信息区域 */
     .resume-info-section {
-      flex: 2.3;
-      padding: 0 5px;
-      margin-left: -10px;
+      flex: 2.2;
+      padding: 0 10px;
+      margin-left: 0;
     }
     
     /* 右侧照片区域 */
     .resume-photo-section {
-      flex: 1;
+      flex: 0.8;
       text-align: right;
+      padding-left: 10px;
     }
     
     .info-table {
@@ -175,13 +176,15 @@
       font-weight: bold;
       margin-bottom: 5px;
     }
-    
+
     .time-right {
       position: absolute;
       right: 0;
       top: 0;
+      color: #666;
+      font-weight: bold;
     }
-    
+
     .experience-item {
       position: relative;
       margin-bottom: 10px;
@@ -221,7 +224,7 @@
       <div class="animated-icon"><span></span><span></span><span></span></div>
     </button>
 
-    <!-- Collapsible content -->
+
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto text-center">
         
@@ -410,15 +413,15 @@
             
             
               <div class="markdown-body">
-                <!-- 修改头部结构为三列布局 -->
+                <!-- 头部结构为三列布局 -->
                 <div class="resume-header">
                   <!-- 左侧姓名 -->
-                  <div class="resume-name-section" style="flex: 0.7; text-align: center; padding-right: 15px;">
+                  <div class="resume-name-section">
                     <div class="artistic-name">刘俊龙</div>
                   </div>
                   
                   <!-- 中间个人信息 -->
-                  <div class="resume-info-section" style="flex: 2.3; padding: 0 5px; margin-left: -10px;">
+                  <div class="resume-info-section">
                     <table class="info-table">
                       <tr>
                         <td class="info-label">联系电话</td>
@@ -428,7 +431,6 @@
                         <td class="info-separator">:</td>
                         <td class="info-value">longneal@outlook.com</td>
                       </tr>
-                      <tr>
                         <td class="info-label">籍&emsp;&emsp;贯</td>
                         <td class="info-separator">:</td>
                         <td class="info-value">湖南新化</td>
@@ -461,12 +463,12 @@
           
                 <div class="resume-section">
                   <h2 class="section-title">教育背景</h2>
-                  <div style="display: flex;justify-content: space-between;font-weight: bold;">
+                  <div style="display: flex;justify-content: space-between;font-weight: bold;position: relative;">
                     <span>中南林业科技大学</span>
                     <span>计算机与数学学院</span>
                     <span>计算机科学与技术</span>
-                    <span>本科在读（大二）</span>
-                    <span>2023.09-至今</span>
+                    <span style="margin-right: 200px;">本科在读（大二）</span>
+                    <span class="time-right">2023.09-至今</span>
                   </div>
                   <ul>
                     <li>GPA：3.90&emsp;&emsp;Rank：前4%</li>
