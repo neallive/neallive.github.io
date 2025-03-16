@@ -143,46 +143,16 @@
     flex-direction: column; /* 在小屏幕上改为垂直排列 */
   }
   
-  /* 添加名字和照片在同一行的样式 */
-  .resume-name-section, .photo-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
-  
-  /* 创建名字和照片的容器 */
-  .resume-header::before {
-    content: "";
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-  }
-  
-  /* 调整名字和照片的位置 */
-  .resume-name-section {
-    position: absolute;
-    left: 30%;
-    transform: translateX(-50%);
-  }
-  
-  .photo-section {
-    position: absolute;
-    right: 30%;
-    transform: translateX(50%);
-  }
-  
-  /* 为信息部分添加足够的上边距，避免与名字照片重叠 */
-  .resume-info-section {
-    margin-top: 100px;
-  }
-  
   .info-table td {
     display: block; /* 在小屏幕上每个单元格占一行 */
     width: 100% !important;
   }
+  
+  .photo-section {
+    display: none; /* 在小屏幕上不显示照片 */
+  }
 }
+
     
     .info {
       text-align: left;
