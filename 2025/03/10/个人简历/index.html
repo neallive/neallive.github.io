@@ -111,9 +111,10 @@
       display: inline-block;;
     }
     
+
     /* 中间个人信息区域 */
     .resume-info-section {
-      flex: 2;
+      flex: 3;
       padding: 0 10px;
       margin-left: 0;
     }
@@ -123,35 +124,38 @@
       border-collapse: collapse;
       border-spacing: 0;
       border: none !important;
+      table-layout: auto; /* 添加这行使表格可以根据内容自动调整 */
+      max-width: 100%; /* 确保表格不会超出父容器 */
     }
     
     .info-table tr {
       border: none !important;
     }
-
+    
     .info-table td {
       padding: 3px 0;
-      white-space: nowrap;
-      outline: none;
+      white-space: normal; /* 修改为normal允许文本换行 */
       border: none !important;
+      word-break: break-word; /* 添加这行允许长单词断行 */
     }
     
-    .info-label {
-      width: 75px;
-      text-align: right;
-      font-weight: 500;
-      padding-right: 5px;
+    /* 添加媒体查询以在小屏幕上调整样式 */
+    @media (max-width: 768px) {
+      .resume-header {
+        flex-direction: column; /* 在小屏幕上改为垂直排列 */
+      }
+      
+      .info-table td {
+        display: block; /* 在小屏幕上每个单元格占一行 */
+        width: 100% !important;
+      }
     }
     
-    .info-value {
+    .info {
       text-align: left;
-      padding-right: 15px;
+      font-weight: 500;
     }
-    
-    .info-separator {
-      width: 15px;
-      text-align: center;
-    }
+  
 
     /* 右侧照片区域 */
     .photo-section {
@@ -428,33 +432,22 @@
                   <div class="resume-info-section">
                     <table class="info-table">
                       <tr>
-                        <td class="info-label">联系电话</td>
-                        <td class="info-separator">:</td>
-                        <td class="info-value">189-7388-5943</td>
-                        <td class="info-label">电子邮箱</td>
-                        <td class="info-separator">:</td>
-                        <td class="info-value">longneal@outlook.com</td>
+                        <td class="info">联系电话：189-7388-5943</td>
+                        <td class="info">电子邮箱：longneal@outlook.com</td>
                       </tr>
                       <tr>
-                        <td class="info-label">籍&emsp;&emsp;贯</td>
-                        <td class="info-separator">:</td>
-                        <td class="info-value">湖南新化</td>
-                        <td class="info-label">出生年月</td>
-                        <td class="info-separator">:</td>
-                        <td class="info-value">2005年4月</td>
+                        <td class="info">籍&emsp;&emsp;贯：湖南新化</td>
+                        <td class="info">出生年月：2005年4月</td>
                       </tr>
                       <tr>
-                        <td class="info-label">政治面貌</td>
-                        <td class="info-separator">:</td>
-                        <td class="info-value">入党积极分子</td>
-                        <td class="info-label">民&emsp;&emsp;族</td>
-                        <td class="info-separator">:</td>
-                        <td class="info-value">汉</td>
+                        <td class="info">政治面貌：入党积极分子</td>
+                        <td class="info">民&emsp;&emsp;族：汉</td>
+                 
                       </tr>
                       <tr>
-                        <td class="info-label">GitHub&nbsp;</td>
-                        <td class="info-separator">:</td>
-                        <td class="info-value" colspan="4"><a href="https://github.com/neallive" target="_blank">https://github.com/neallive</a></td>
+                        <td class="info">&nbsp;GitHub &nbsp;：
+                          <a href="https://github.com/neallive" target="_blank">https://github.com/neallive</a></td>
+                      
                       </tr>
                     </table>
                   </div>
