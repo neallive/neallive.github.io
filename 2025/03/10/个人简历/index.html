@@ -134,21 +134,20 @@
     
     .info-table td {
       padding: 3px 0;
-      
       border: none !important;
-      
     }
     
     /* 添加媒体查询以在小屏幕上调整样式 */
-    @media (max-width: 768px) {
-      .resume-header {
-        flex-direction: row; /* 改为水平排列 */
-      
-     
-      }
-      
-    
-    }
+  @media (max-width: 768px) {
+  .resume-header {
+    flex-direction: column; /* 在小屏幕上改为垂直排列 */
+  }
+  
+  .info-table td {
+    display: block; /* 在小屏幕上每个单元格占一行 */
+    width: 100% !important;
+  }
+}
     
     .info {
       text-align: left;
