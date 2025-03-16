@@ -87,8 +87,17 @@
 
   
   <style>
+    body {
+      font-family: '微软雅黑';
+      line-height: 1.6;
+      color: #333;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
     /* 修改头部布局为三列 */
-    .resume-header {
+    .header {
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -96,80 +105,65 @@
     }
     
     /* 左侧姓名区域 */
-    .resume-name-section {
-      flex: 0.7;
-      text-align: center;
-      padding-right: 15px;
+    .name-section {
+      flex: 1;
+      text-align: left;
     }
     
-    .artistic-name {
-      font-family: "楷体";
-      font-size: 36px; 
-      color: #000000; 
-      letter-spacing: 2px;
+    .name-section h1 {
       margin: 0;
-      padding: 0;
-      display: inline-block;
+      font-size: 28px;
     }
     
     /* 中间个人信息区域 */
-    .resume-info-section {
-      flex: 2.3;
-      padding: 0 5px;
-      margin-left: -10px;
+    .info-section {
+      flex: 2;
+      padding: 0 20px;
+    }
+    
+    .info-section p {
+      margin: 5px 0;
     }
     
     /* 右侧照片区域 */
-    .resume-photo-section {
+    .photo-section {
       flex: 1;
       text-align: right;
     }
     
-    .info-table {
-      width: 100%;
-      border-collapse: collapse;
-      border: none !important;
+    /* 其他样式保持不变 */
+    .contact-info {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 20px;
     }
     
-    .info-table td {
-      padding: 3px 0;
-      vertical-align: top;
-      border: none !important;
-      white-space: nowrap;
+    .contact-item {
+      display: flex;
+      align-items: center;
     }
     
-    .info-label {
-      width: 75px;
-      text-align: right;
-      padding-right: 5px;
-      font-weight: 500;
+    .contact-item img {
+      margin-right: 5px;
     }
     
-    .info-value {
-      text-align: left;
-    }
-    
-    .info-separator {
-      width: 15px;
-      text-align: center;
-    }
-    
-    .resume-section {
+    .section {
       margin-bottom: 25px;
       clear: both;
     }
     
     .section-title {
-      border-bottom: 2px solid #000000;
+      border-bottom: 2px solid #4e5863;
       padding-bottom: 5px;
       margin-bottom: 15px;
       font-size: 20px;
     }
     
-    .resume-item {
+    .item {
       position: relative;
       margin-bottom: 15px;
-      padding-right: 120px;
     }
     
     .item-title {
@@ -181,8 +175,16 @@
       position: absolute;
       right: 0;
       top: 0;
-      color: #000000;
+      color: #333;
       font-weight: bold;
+    }
+    
+    ul {
+      padding-left: 20px;
+    }
+    
+    li {
+      margin-bottom: 5px;
     }
     
     .experience-item {
@@ -191,9 +193,18 @@
       margin-bottom: 10px;
     }
     
-  
-    .markdown-body ul {
-      padding-left: 20px;
+    /* 响应式布局 */
+    @media (max-width: 768px) {
+      .header {
+        flex-direction: column;
+        text-align: center;
+      }
+      
+      .name-section, .info-section, .photo-section {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 15px;
+      }
     }
   </style>
   
