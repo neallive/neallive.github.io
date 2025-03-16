@@ -334,11 +334,14 @@
     .info-table {
       width: 100%;
       border-collapse: collapse;
+      border: none !important;
     }
     
     .info-table td {
       padding: 3px 0;
       vertical-align: top;
+      border: none !important;
+      white-space: nowrap;
     }
     
     .info-label {
@@ -392,7 +395,6 @@
       position: relative;
       padding-right: 120px;
       margin-bottom: 10px;
-      list-style-type: none;
     }
     
     /* 覆盖markdown默认样式 */
@@ -403,6 +405,49 @@
     
     .markdown-body ul {
       padding-left: 20px;
+    }
+    
+    /* 添加这个样式让主修课程文字充分利用空间 */
+    .resume-item ul li {
+      word-break: break-all !important;
+      word-wrap: break-word !important;
+      white-space: normal !important;
+      width: 100% !important;
+      max-width: 100% !important;
+      display: block !important;
+    }
+    
+    /* 确保主修课程的容器也能充分利用空间 */
+    .resume-item ul {
+      width: 100% !important;
+      max-width: 100% !important;
+      padding-right: 0 !important;
+    }
+    
+    /* 确保resume-item本身也能充分利用空间 */
+    .resume-item {
+      position: relative;
+      margin-bottom: 15px;
+      padding-right: 120px;
+      width: 100% !important;
+      box-sizing: border-box !important;
+    }
+    
+    /* 覆盖可能影响布局的markdown-body样式 */
+    .markdown-body {
+      max-width: none !important;
+      width: 100% !important;
+    }
+    
+    /* 覆盖可能限制内容宽度的容器样式 */
+    #board-ctn, #board, .post-content {
+      max-width: none !important;
+      width: 100% !important;
+    }
+    
+    /* 确保列表项内容不会被截断 */
+    .resume-item ul li {
+      overflow: visible !important;
     }
   </style>
   </header>
@@ -478,10 +523,10 @@
                 <div class="resume-section">
                   <h2 class="section-title">教育背景</h2>
                   <div class="resume-item">
-                    <div class="item-title">中南林业科技大学&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;计算机与数学学院&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;计算机科学与技术&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;本科在读（大二）</div>
+                    <div class="item-title">中南林业科技大学&emsp;&emsp;计算机与数学学院&emsp;&emsp;计算机科学与技术&emsp;&emsp;本科在读（大二）</div>
                     <div class="time-right">2023.09-至今</div>
                     <ul>
-                      <li>GPA：3.90&emsp;&emsp;rank：前4%</li>
+                      <li>GPA：3.90&emsp;&emsp;Rank：前4%</li>
                       <li>主修课程：高等数学（98）、C程序设计实验（95）、离散数学（91）、C++程序设计（92）、C++程序设计实验（92）、线性代数（90）、大学物理实验（98）、Java程序设计实验（90）、Java课程设计（95）、数据结构（94）、数据结构实验（95）、数据库课程设计（92）等</li>
                     </ul>
                   </div>
