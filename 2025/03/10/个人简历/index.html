@@ -137,19 +137,32 @@
       border: none !important;
     }
     
-    /* 添加媒体查询以在小屏幕上调整样式 */
+    /* 添加媒体查询以在手机屏幕上调整样式 */
   @media (max-width: 768px) {
   .resume-header {
-    flex-direction: column; /* 在小屏幕上改为垂直排列 */
+    flex-direction: column; /* 在手机屏幕上改为垂直排列 */
   }
   
   .info-table td {
-    display: block; /* 在小屏幕上每个单元格占一行 */
+    display: block; /* 在手机屏幕上每个单元格占一行 */
     width: 100% !important;
   }
   
   .photo-section {
-    display: none; /* 在小屏幕上不显示照片 */
+    display: none; /* 在手机屏幕上不显示照片 */
+  }
+  
+  /* 添加这部分解决时间重叠问题 */
+  .time-right {
+    position: static; /* 取消绝对定位 */
+    display: block; /* 使其变为块级元素 */
+    text-align: left; /* 左对齐 */
+    margin-top: 5px; /* 添加上边距 */
+    margin-bottom: 10px; /* 添加下边距 */
+  }
+  
+  .experience-item {
+    padding-right: 0; /* 移除右侧内边距 */
   }
 }
 
