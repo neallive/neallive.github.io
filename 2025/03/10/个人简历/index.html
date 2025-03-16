@@ -86,27 +86,6 @@
   <script  src="/js/color-schema.js" ></script>
   
 
-  <style>
-    /* 添加更强的选择器优先级来覆盖主题样式 */
-    .markdown-body .info-table,
-    .markdown-body .info-table tr,
-    .markdown-body .info-table td {
-      border: none !important;
-      border-collapse: collapse !important;
-      border-spacing: 0 !important;
-      background: transparent !important;
-      box-shadow: none !important;
-    }
-    
-    /* 确保没有表格线条 */
-    .markdown-body .info-table td {
-      padding: 3px 0 !important;
-      border-top: none !important;
-      border-bottom: none !important;
-      border-left: none !important;
-      border-right: none !important;
-    }
-  </style>
   
   <style>
     /*头部布局为三列 */
@@ -142,15 +121,19 @@
     .info-table {
       width: 100%;
       border-collapse: collapse;
-      border: none !important;
       border-spacing: 0;
+      border: none !important;
     }
     
+    .info-table tr {
+      border: none !important;
+    }
+
     .info-table td {
       padding: 3px 0;
-      border: none !important;
       white-space: nowrap;
       outline: none;
+      border: none !important;
     }
     
     .info-label {
