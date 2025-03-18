@@ -1,5 +1,6 @@
 
 
+
 <!DOCTYPE html>
 <html lang="zh-CN" data-default-color-scheme=auto>
 
@@ -8,11 +9,11 @@
 <head>
   <meta charset="UTF-8">
 
-  <link rel="apple-touch-icon" sizes="76x76" href="/img/avatar.png">
-  <link rel="icon" href="/img/avatar.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
   
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
   <meta name="theme-color" content="#2f4154">
@@ -27,10 +28,9 @@
 <meta property="og:description" content="这里是我的个人简历，如果你对我的简历感兴趣，欢迎通过我的联系方式进行交流，谢谢！">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://neallive.github.io/img/GRJL.png">
-<meta property="article:published_time" content="2025-03-10T11:44:23.000Z">
-<meta property="article:modified_time" content="2025-03-17T20:07:53.952Z">
+<meta property="article:published_time" content="2025-03-10T10:45:23.000Z">
+<meta property="article:modified_time" content="2025-03-16T05:58:46.345Z">
 <meta property="article:author" content="liujunlong">
-<meta property="article:tag" content="原创">
 <meta property="article:tag" content="简历">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://neallive.github.io/img/GRJL.png">
@@ -75,7 +75,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"neallive.github.io","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":"AIU1ohncKcRjENJqRNF0BLDN-gzGzoHsz","app_key":"XeAigVaTyd7n1BdmH7QSSiHV","server_url":"https://aiu1ohnc.lc-cn-n1-shared.com","path":"window.location.pathname","ignore_local":true},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"neallive.github.io","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":"MhxbnFRbXYc3kvXXchxHgSTV-MdYXbMMI","app_key":"16qcWT3ld1kDTpYKK7upr2xY","server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -87,18 +87,116 @@
   
 
   
+  <style>
+    /*头部布局为三列 */
+    .resume-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+    
+    /* 左侧姓名区域 */
+    .resume-name-section {
+      flex: 1.5;
+      text-align: center;
+    }
+    
+    .artistic-name {
+      font-family: "楷体";
+      font-size: 28px; 
+      letter-spacing: 3px;
+      margin: 0;
+      padding: 0;
+      display: inline-block;;
+    }
+    
 
+    /* 中间个人信息区域 */
+    .resume-info-section {
+      flex: 7.5;
+      padding: 0 10px;
+      margin-left: 0;
+    }
+    
+    .info-table {
+      width: 100%;
+      border-collapse: collapse;
+      border-spacing: 0;
+      border: none !important;
+      table-layout: auto; 
+      max-width: 100%; 
+    }
+    
+    .info-table tr {
+      border: none !important;
+    }
+    
+    .info-table td {
+      padding: 3px 0;
+      border: none !important;
+    }
+    
+
+
+    
+    .info {
+      text-align: left;
+      font-weight: 500;
+    }
   
 
-  
+    /* 右侧照片区域 */
+    .photo-section {
+      flex: 1;
+      text-align: right;
+    }
 
-  
 
-  
+
+    .resume-section {
+      margin-bottom: 25px;
+      clear: both;
+    }
+    
+    .resume-item {
+      position: relative;
+      margin-bottom: 15px;
+    }
     
   
+    .markdown-body ul {
+      padding-left: 20px;
+    }
+
+    .markdown-body h2 {
+     border-bottom: 2px solid #363232;
+    }
+
+    /* 添加媒体查询以在手机屏幕上调整样式 */
+    @media (max-width: 768px) {
+  .resume-header {
+    flex-direction: column; /* 在手机屏幕上改为垂直排列 */
+  }
+  
+  .info-table td {
+    display: block; /* 在手机屏幕上每个单元格占一行 */
+    width: 100% !important;
+  }
+  
+  .photo-section {
+    display: none; /* 在手机屏幕上不显示照片 */
+  }
+
+}
 
 
+  </style>
+  
+
+  
+
+  
 
   
 <meta name="generator" content="Hexo 7.3.0"></head>
@@ -123,7 +221,7 @@
       <div class="animated-icon"><span></span><span></span><span></span></div>
     </button>
 
-    <!-- Collapsible content -->
+
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto text-center">
         
@@ -180,6 +278,18 @@
           
           
             <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-link-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
               <a class="nav-link" href="/login.html" target="_self">
                 <i class="iconfont icon-user-fill"></i>
                 <span>登录</span>
@@ -227,7 +337,7 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2025-03-10 19:44" pubdate>
+        <time datetime="2025-03-10 18:45" pubdate>
           2025年3月10日 晚上
         </time>
       </span>
@@ -250,7 +360,7 @@
         
         
         
-          3 分钟
+          5 分钟
         
       </span>
     
@@ -278,7 +388,7 @@
 </div>
 
 </div>
-
+ 
   </header>
 
   <main>
@@ -300,44 +410,125 @@
             
             
               <div class="markdown-body">
+                <!-- 头部结构为三列布局 -->
+                <div class="resume-header">
+                  <!-- 左侧姓名 -->
+                  <div class="resume-name-section">
+                    <div class="artistic-name">刘俊龙</div>
+                  </div>
+                  
+                  <!-- 中间个人信息 -->
+                  <div class="resume-info-section">
+                    <table class="info-table">
+                      <tr>
+                        <td class="info">联系电话：189-7388-5943</td>
+                        <td class="info">电子邮箱：longneal@outlook.com</td>
+                      </tr>
+                      <tr>
+                        <td class="info">籍&emsp;&emsp;贯：湖南新化</td>
+                        <td class="info">出生年月：2005年4月</td>
+                      </tr>
+                      <tr>
+                        <td class="info">政治面貌：入党积极分子</td>
+                        <td class="info">民&emsp;&emsp;族：汉</td>
+                 
+                      </tr>
+                      <tr>
+                        <td class="info">GitHub：
+                          <a href="https://github.com/neallive" target="_blank">https://github.com/neallive</a></td>
+                      </tr>
+                    </table>
+                  </div>
                 
-                <h1 id="个人信息"><a href="#个人信息" class="headerlink" title="个人信息"></a>个人信息</h1><p>刘俊龙</p>
-<p>联系电话：189-7388-5943</p>
-<p>电子邮箱：<a href="mailto:&#x32;&#x32;&#x35;&#x37;&#51;&#51;&#x32;&#57;&#x38;&#55;&#64;&#x71;&#113;&#46;&#x63;&#x6f;&#109;">2257332987@qq.com</a></p>
-<p>籍贯：湖南新化</p>
-<p>出生年月：2005年4月</p>
-<p>政治面貌：入党积极分子</p>
-<p>民族：汉</p>
-<p>GitHub:<a target="_blank" rel="noopener" href="https://github.com/neallive">https://github.com/neallive</a></p>
-<div style="float:right;">
-<img src="myself.jpg" srcset="/img/loading.gif" lazyload width="90"></div>
-
-<h1 id="教育背景"><a href="#教育背景" class="headerlink" title="教育背景"></a>教育背景</h1><h2 id="中南林业科技大学计算机与数学学院计算机科学与技术本科在读（大二）2023-09-至今"><a href="#中南林业科技大学计算机与数学学院计算机科学与技术本科在读（大二）2023-09-至今" class="headerlink" title="中南林业科技大学		计算机与数学学院		计算机科学与技术		本科在读（大二）		2023.09-至今"></a>中南林业科技大学		计算机与数学学院		计算机科学与技术		本科在读（大二）		2023.09-至今</h2><ul>
-<li>GPA：3.90		rank：前4%</li>
-<li>主修课程：高等数学（98）、C程序设计实验（95）、离散数学（91）、C++程序设计（92）、C++程序设计实验（92）、线性代数（90）、大学物理实验（98）、Java程序设计实验（90）、Java课程设计（95）、数据结构（94）、数据结构实验（95）、数据库课程设计（92）等</li>
-</ul>
-<h1 id="课程设计"><a href="#课程设计" class="headerlink" title="课程设计"></a>课程设计</h1><h2 id="研究生成绩管理系统-2024-12-2025-01"><a href="#研究生成绩管理系统-2024-12-2025-01" class="headerlink" title="研究生成绩管理系统																									 		2024.12-2025.01"></a>研究生成绩管理系统																									 		2024.12-2025.01</h2><ul>
-<li>设计并开发研究生成绩管理系统，基于SQL Server完成数据库架构设计与优化，开发存储过程与触发器，实现动态统计与数据一致性，通过索引优化提升查询效率，构建多角色数据视图</li>
-</ul>
-<h2 id="三线程猜数字-2024-11-2024-12"><a href="#三线程猜数字-2024-11-2024-12" class="headerlink" title="三线程猜数字																												        2024.11-2024.12"></a>三线程猜数字																												        2024.11-2024.12</h2><ul>
-<li>开发Java多线程猜数字游戏，采用Runnable接口&#x2F;Thread子类双模式实现三线程竞猜，通过synchronized同步锁解决线程冲突，集成用户登录注册（基于IO流文件存储）及GUI界面，支持线程&#x2F;用户双模式交互，深化多线程与GUI技术实践</li>
-</ul>
-<h1 id="获奖经历"><a href="#获奖经历" class="headerlink" title="获奖经历"></a>获奖经历</h1><ul>
-<li>2023-2024学年国家励志奖学金</li>
-<li>2023-2024学年甲等奖学金</li>
-<li>2023-2024学年三好学生</li>
-<li>2023-2024学年优秀共青团员</li>
-<li>2024年全国大学生数学建模竞赛湖南赛区二等奖</li>
-<li>2024年中南林业科技大学数学建模竞赛三等奖</li>
-</ul>
-<h1 id="学生干部经历"><a href="#学生干部经历" class="headerlink" title="学生干部经历"></a>学生干部经历</h1><ul>
-<li>计算机与数学学院团委学生会成长助学部副部长																			2024.07-至今</li>
-<li>中南林业科技大学软件协会算法部副部长 																					  2024.07-至今</li>
-<li>中南林业科技大学ACM编程爱好者协会外联部部长		      										        	 	2024.06-至今</li>
-<li>计算机与信息工程学院团委学生会公益助学部干事															  	2023.10-2024.06</li>
-</ul>
-
+                  <!-- 右侧照片 -->
+                  <div class="photo-section">
+                    <img src="myself.jpg" width="90">
+                  </div>
+                </div>
                 
+          
+                <div class="resume-section">
+                  <h2 id="教育背景"><a href="#教育背景" class="headerlink" itle="教育背景"></a>教育背景</h2>
+                  <div style="display: flex;justify-content: space-between;font-weight: bold;position: relative;">
+                    <span>中南林业科技大学</span>
+                    <span>计算机与数学学院</span>
+                    <span>计算机科学与技术</span>
+                    <span>本科在读（大二）</span>
+                    <span style="color: #666; font-weight: bold;">2023.09-至今</span>
+                  </div>
+                  <ul>
+                    <li>GPA：3.90&emsp;&emsp;Rank：前4%</li>
+                    <li>主修课程：高等数学（98）、C程序设计实验（95）、离散数学（91）、C++程序设计（92）、C++程序设计实验（92）、线性代数（90）、大学物理实验（98）、Java程序设计实验（90）、Java课程设计（95）、数据结构（94）、数据结构实验（95）、数据库课程设计（92）等</li>
+                  </ul>
+                </div>
+                
+                <div class="resume-section">
+                  <h2 id="课程设计"><a href="#课程设计" class="headerlink" title="课程设计"></a>课程设计</h2>
+                  <div class="resume-item">
+                    <div style="display: flex;justify-content: space-between;font-weight: bold;position: relative;">
+                      <span>研究生成绩管理系统</span>
+                      <span style="color: #666; font-weight: bold;">2024.12-2025.01</span>
+                    </div>
+                    <ul>
+                      <li>设计并开发研究生成绩管理系统，基于SQL Server完成数据库架构设计与优化，开发存储过程与触发器，实现动态统计与数据一致性，通过索引优化提升查询效率，构建多角色数据视图</li>
+                    </ul>
+                  </div>
+               
+
+                  <div class="resume-item">
+                    <div style="display: flex;justify-content: space-between;font-weight: bold;position: relative;">
+                      <span>三线程猜数字</span>
+                      <span style="color: #666; font-weight: bold;">2024.11-2024.12</span>
+                    </div>
+                    <ul>
+                      <li>开发Java多线程猜数字游戏，采用Runnable接口/Thread子类双模式实现三线程竞猜，通过synchronized同步锁解决线程冲突，集成用户登录注册（基于IO流文件存储）及GUI界面，支持线程/用户双模式交互，深化多线程与GUI技术实践</li>
+                    </ul>
+                  </div>
+                </div>
+              
+                
+                <div class="resume-section">
+                 <h2 id="获奖经历"><a href="#获奖经历" class="headerlink" title="获奖经历"></a>获奖经历</h2>
+                  <ul>
+                    <li>2023-2024学年国家励志奖学金</li>
+                    <li>2023-2024学年甲等奖学金</li>
+                    <li>2023-2024学年三好学生</li>
+                    <li>2023-2024学年优秀共青团员</li>
+                    <li>2024年全国大学生数学建模竞赛湖南赛区二等奖</li>
+                    <li>2024年中南林业科技大学数学建模竞赛三等奖</li>
+                  </ul>
+                </div>
+                
+                <div class="resume-section">
+                  <h2 id="学生干部经历"><a href="#学生干部经历" class="headerlink" title="学生干部经历"></a>学生干部经历</h2>
+                  <ul>
+
+                    <li>
+                      <div style="display: flex;justify-content: space-between;position: relative;">
+                        <span>计算机与数学学院团委学生会成长助学部副部长</span>
+                        <span style="color: #666; font-weight: bold;">2024.07-至今</span>
+                    </li>
+
+                    <li>
+                      <div style="display: flex;justify-content: space-between;position: relative;">
+                        <span>中南林业科技大学软件协会算法部副部长</span>
+                        <span style="color: #666; font-weight: bold;">2024.07-至今</span>
+                    </li>
+
+                    <li>
+                    <div style="display: flex;justify-content: space-between;position: relative;">
+                      <span>中南林业科技大学ACM编程爱好者协会外联部部长</span>
+                      <span style="color: #666; font-weight: bold;">2024.06-至今</span>
+                    </li>
+
+                    <li>
+                      <div style="display: flex;justify-content: space-between;position: relative;">
+                        <span>计算机与信息工程学院团委学生会公益助学部干事</span>
+                        <span style="color: #666; font-weight: bold;">2023.10-2024.06</span>
+                      </li>
+
+                  </ul>
+                </div>
               </div>
             
             <hr/>
@@ -368,8 +559,6 @@
   
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
-      
-        <a href="/tags/%E5%8E%9F%E5%88%9B/" class="print-no-link">#原创</a>
       
         <a href="/tags/%E7%AE%80%E5%8E%86/" class="print-no-link">#简历</a>
       
@@ -428,15 +617,15 @@
                   <article class="post-prev col-6">
                     
                     
+                      <a href="/2025/03/10/%E6%88%91%E7%9A%84%E7%90%86%E6%83%B3/" title="我的理想">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">我的理想</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
                   </article>
                   <article class="post-next col-6">
                     
-                    
-                      <a href="/2025/03/10/%E6%88%91%E7%9A%84%E7%90%86%E6%83%B3/" title="我的理想">
-                        <span class="hidden-mobile">我的理想</span>
-                        <span class="visible-mobile">下一篇</span>
-                        <i class="iconfont icon-arrowright"></i>
-                      </a>
                     
                   </article>
                 </div>
@@ -453,7 +642,7 @@
     Fluid.utils.loadComments('#valine', function() {
       Fluid.utils.createScript('https://lib.baomitu.com/valine/1.5.1/Valine.min.js', function() {
         var options = Object.assign(
-          {"appId":"AIU1ohncKcRjENJqRNF0BLDN-gzGzoHsz","appKey":"XeAigVaTyd7n1BdmH7QSSiHV","path":"window.location.pathname","placeholder":null,"avatar":"retro","meta":["nick","mail","link"],"requiredFields":[],"pageSize":10,"lang":"zh-CN","highlight":false,"recordIP":false,"serverURLs":null,"emojiCDN":null,"emojiMaps":null,"enableQQ":false},
+          {"appId":"MhxbnFRbXYc3kvXXchxHgSTV-MdYXbMMI","appKey":"16qcWT3ld1kDTpYKK7upr2xY","path":"window.location.pathname","placeholder":null,"avatar":"retro","meta":["nick","mail","link"],"requiredFields":[],"pageSize":10,"lang":"zh-CN","highlight":false,"recordIP":false,"serverURLs":"https://mhxbnfrb.api.lncldglobal.com","emojiCDN":null,"emojiMaps":null,"enableQQ":false},
           {
             el: "#valine",
             path: window.location.pathname
@@ -528,6 +717,7 @@
 
 
 
+
     
 
     
@@ -567,7 +757,7 @@
     <div class="footer-inner">
   
     <div class="footer-content">
-       <a href="" target="_blank" rel="nofollow noopener"><span></span></a> <i class="></i> <a href="" target="_blank" rel="nofollow noopener"><span></span></a> 
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
     </div>
   
   
@@ -760,3 +950,4 @@
   </noscript>
 </body>
 </html>
+
